@@ -171,7 +171,7 @@ function JsonHandler(identifier) {
     };
 
     const parseJsonArray = (arrayString) => {
-        return (JSON.parse(`{"data":${arrayString}}`)).data;
+        return JSON.parse(arrayString);
     };
 
     const hashObject = function (properties, entry) {
